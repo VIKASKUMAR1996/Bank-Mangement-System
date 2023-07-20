@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 public class PinChange extends JFrame implements ActionListener  {
     String cardnumber;
-    JTextField pin , repin;
+    JPasswordField pin , repin;
     JButton change ,back;
     PinChange(String cardnumber ){
         
@@ -35,7 +35,7 @@ public class PinChange extends JFrame implements ActionListener  {
         
         
         
-        pin = new JTextField();
+        pin = new JPasswordField();
         pin.setFont(new Font("Raleway",Font.BOLD,25));
         pin.setBounds(330,320,180,25);
         image.add(pin);
@@ -47,7 +47,7 @@ public class PinChange extends JFrame implements ActionListener  {
         repintext.setBounds(165,360,180,25);
         image.add(repintext);
      
-        repin = new JTextField();
+        repin = new JPasswordField();
         repin.setFont(new Font("Raleway",Font.BOLD,25));
         repin.setBounds(330,360,180,25);
         image.add(repin);
